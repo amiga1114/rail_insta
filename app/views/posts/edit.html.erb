@@ -1,6 +1,18 @@
-<h1>수정하기</h1>
-<form action="/posts/update/<%= @post.id %>" method="post">
-  제목 : <input type="text" name="title" value="<%= @post.title %>"><br>
-  내용 : <input type="text" name="content" value="<%= @post.content %>"><br>
-  <input type="submit">
-</form>
+<div class="container">
+  <div class="card mb-3">
+    <div class="card-body">
+      <h3 class="display-5">수정하기</h3>
+      <form action="/posts/update/<%= @post.id %>" method="post">
+        <div class="form-group">
+          <label for="exampleInputEmail">제목</label>
+          <input type="text" class="form-control" name="title" value="<%= @post.title %>"><br>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail">내용</label>
+           <input type="text" class="form-control" name="content" value="<%= @post.content %>"><br>
+        </div>
+        <button type="submit" class="btn btn-primary">등록</button>
+      </form>
+    </div>
+  </div>
+</div>

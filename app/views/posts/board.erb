@@ -1,0 +1,5 @@
+<% @posts.each do |post| %>
+  <div>
+    <a href="/posts/show/<%= post.id %>"><%= post.title %></a>
+  </div>
+<% end %>

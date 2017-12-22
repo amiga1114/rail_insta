@@ -1,7 +1,22 @@
-<h1>새로운 사진 올리기</h1>
-<form action="/posts/create" method="post" enctype="multipart/form-data" >
-  제목 : <input type="text" name="title"><br>
-  내용 : <input type="text" name="content"><br>
-  <input type="file" name="avatar">
-  <input type="submit">
-</form>
+<div class="container">
+  <div class="card mb-3">
+    <div class="card-body">
+      <h3 class="display-5">새로운 사진 올리기</h3>
+      <form action="/posts/create" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="exampleInputEmail">제목</label>
+          <input type="text" class="form-control" name="title" placeholder="제목을 입력하세요."><br>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail">내용</label>
+          <input type="text" class="form-control" name="content" placeholder="내용을 입력하세요."><br>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail">사진업로드</label>
+          <input type="file" class="form-control" name="avatar"><br>
+        </div>
+        <button type="submit" class="btn btn-primary">등록</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'users/login'
+
+  get 'users/login_session'
+
+  get 'users/logout'
+
+  get 'users/signup'
+
+  get 'users/register'
+
   root 'posts#index'
 
   get '/posts/index'
@@ -7,6 +17,8 @@ Rails.application.routes.draw do
   get '/posts/new'
 
   post '/posts/create'
+
+  get '/posts/board'
 
   get '/posts/show/:id' => 'posts#show'
 

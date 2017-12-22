@@ -1,9 +1,36 @@
-<h1>인스타그램</h1>
-<p>사진을 올려주세영</p>
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIJpigbLfZPPVsXgmSy_QubemJGZJ2_v8APR7XZHE8iikHtajK" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">우리집 꽃</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR1vVRinqPZDGadNUJBqwAnlLrqrzvCoKHp640v3Rab9GEYY6xBQ" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">엄마 이거봐라</h4>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1H3H4SfOOrdKKuBCPzK6yZ6fCB-k5I9D5bc0LZvn7QsQL2gg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">잘했징~~!!!</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
 
 <%= link_to "새 사진 올리기", "/posts/new" %>
-<% @posts.each do |post| %>
-  <div>
-    <a href="/posts/show/<%= post.id %>"><%= post.title %></a>
-  </div
-<% end %>
