@@ -17,14 +17,13 @@
 
 ---
 
-## 4. Like(Heart)
+## 4. Comment
 
-## 5. Comment
-
-## 6. User : Post = 1 : N
-
-## 7. Post : Comment = 1 : N
+## 5. User : Post = 1 : N
 
 
+## 6. Post : Comment = 1 : N
+
+## 7. Like(Heart) = M : N
 
 ## 8.
